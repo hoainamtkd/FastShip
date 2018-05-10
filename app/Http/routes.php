@@ -1,16 +1,140 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+Route::group(['prefix' => '/'], function () {
+    
+    Route::get('/', [ 
+    	'as' => 'index', 
+    	'uses' => 'Fontend\HomeController@index'
+    ]);
+	
+	Route::get('/gioi-thieu', [ 
+		'as' => 'gioi-thieu', 
+		'uses' => 'Fontend\IntroController@index'
+	]);
 
-Route::get('/', function () {
-    return view('welcome');
+	Route::get('/lien-he', [ 
+		'as' => 'lien-he', 
+		'uses' => 'Fontend\ContactController@index'
+	]);
+
+	Route::get('/tin-tuc', [ 
+		'as' => 'tin-tuc', 
+		'uses' => 'Fontend\NewsController@index'
+	]);
+
+	Route::get('/tuyen-dung', [ 
+		'as' => 'tuyen-dung', 
+		'uses' => 'Fontend\CareersController@index'
+	]);
+
+	Route::get('/giao-hang-nhanh', [ 
+		'as' => 'giao-hang-nhanh', 
+		'uses' => 'Fontend\FastShipController@index'
+	]);
+
+	Route::get('/giao-hang-thu-tien-cod', [ 
+		'as' => 'giao-hang-thu-tien-cod', 
+		'uses' => 'Fontend\CashReceiptsCodController@index'
+	]);
+
+	Route::get('/giao-hang-tiet-kiem', [ 
+		'as' => 'giao-hang-tiet-kiem', 
+		'uses' => 'Fontend\DeliveryOfSavingsController@index'
+	]);
+
+	Route::get('/giao-hang-trong-ngay', [ 
+		'as' => 'giao-hang-trong-ngay', 
+		'uses' => 'Fontend\DeliveryOfDayController@index'
+	]);
+
+	Route::get('/giao-hang-dia-phuong', [ 
+		'as' => 'giao-hang-dia-phuong', 
+		'uses' => 'Fontend\DeliveryOfRegionController@index'
+	]);
+
+	Route::get('/van-tai-bac-nam', [ 
+		'as' => 'van-tai-bac-nam', 
+		'uses' => 'Fontend\NorthSouthTransportationController@index'
+	]);
+
+	Route::get('/luu-kho', [ 
+		'as' => 'luu-kho', 
+		'uses' => 'Fontend\StorageController@index'
+	]);
+
 });
+
+// Backend
+Route::group(['prefix' => '/fs/cpanel/'], function () {
+    
+    Route::get('/dashboard' ,[ 
+    	'as' => 'dashboard-index', 
+    	'uses' => 'Backend\IndexController@index'
+    ]);
+	
+	Route::get('/settings' ,[ 
+    	'as' => 'settings-index', 
+    	'uses' => 'Backend\SettingsController@index'
+    ]);
+    Route::get('/pages' ,[ 
+    	'as' => 'pages-index', 
+    	'uses' => 'Backend\PagesController@index'
+    ]);
+    Route::get('/pages/add' ,[ 
+    	'as' => 'pages-create', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/order' ,[ 
+    	'as' => 'order-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/delivery' ,[ 
+    	'as' => 'delivery-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/email' ,[ 
+    	'as' => 'email-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/customer' ,[ 
+    	'as' => 'page-add', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/finance' ,[ 
+    	'as' => 'finance-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/users' ,[ 
+    	'as' => 'users-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/statistical' ,[ 
+    	'as' => 'statistical-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/news' ,[ 
+    	'as' => 'news-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/partner' ,[ 
+    	'as' => 'partner-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/slides' ,[ 
+    	'as' => 'slides-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+    Route::get('/branch' ,[ 
+    	'as' => 'branch-index', 
+    	'uses' => 'Backend\PagesController@create'
+    ]);
+  
+});
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+.content-box-large .table>thead>tr>th, 
+.content-box-large .table>tbody>tr>th, 
+.content-box-large .table>tfoot>tr>th, 
+.content-box-large .table>thead>tr>td,
+.content-box-large .table>tbody>tr>td,
+.content-box-large .table>tfoot>tr>td{
+	border-top: 0px;
+	vertical-align: middle;
+}
+.content-box-large .table>tbody>tr>td.vertical-top{
+	vertical-align:top;
+}
+.sidebar .nav > li {
+	margin: 0;
+	border-bottom: 1px solid #eee;
+	padding: 5px;
+}
+.btn-add-pages{
+	font-weight: 300;
+	font-family: sans-serif;
+}
+.btn-add-pages {
+	font-weight: 300;
+	font-family: sans-serif;
+	outline: 0;
+	font-size: 12px;
+	padding: 5px 8px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	border-radius: 0px;
+}
+.wrapper-pages table {
+	background:#ffffff;
+}
+.wrapper-pages table>thead>tr>th {
+	font-weight: 400;
+	padding: 10px;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+}
+.wrapper-pages table>tbody>tr>td {
+	padding: 15px 10px;
+	vertical-align:middle;
+}
+.header-pages ul{
+	list-style: none;
+	padding-left: 0;
+}
+.header-pages ul li{
+	float: left;
+	padding: 1px;
+}
+.header-pages ul li select{
+	width: 150px;
+	border-radius: 0;
+	padding: 4px;
+	line-height: 30px;
+	height: 30px;
+}
+.header-pages{
+	padding-bottom: 40px;
+}
+
+.action_excute{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 28px;
+	height: 28px;
+	margin: 0;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+.wrapper-pages a{
+	color: #428bca;
+	font-weight: 500;
+}
+.wrapper-pages a:hover{
+	text-decoration: none;
+
+}
+.action-items{
+	padding-right:15px;
+}
+.action-items a{
+  	padding-right: 5px;
+}
+#cke_ckeditor_standard{
+	margin-top:15px;
+}
+.btn-add{
+	margin-top:10px;
+}
+
+.sk-cube-grid {
+    width: 50px;
+    height: 50px;
+    margin: 0px auto;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+    .sk-cube-grid .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: #fbb044;
+        float: left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+        animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    }
+
+    .sk-cube-grid .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .sk-cube-grid .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    .sk-cube-grid .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .sk-cube-grid .sk-cube7 {
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+    }
+
+    .sk-cube-grid .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .sk-cube-grid .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
